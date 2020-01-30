@@ -10,6 +10,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <exec_depend>imu_sensor</exec_depend>
-
-  <export/>
+  
+  <test_depend>roslaunch</test_depend>
+  
 </package>
