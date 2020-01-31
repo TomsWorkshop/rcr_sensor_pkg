@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 catkin_package(
-  INCLUDE_DIRS include
+  # INCLUDE_DIRS include
   CATKIN_DEPENDS 
     geometry_msgs
     std_msgs
@@ -19,8 +19,8 @@ catkin_package(
 ###########
 
 include_directories(
-  include
-  ${catkin_INCLUDE_DIRS}
+  # include
+  # ${catkin_INCLUDE_DIRS}
 )
 
 #############
