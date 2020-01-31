@@ -8,7 +8,8 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS rospy std_msgs
+  CATKIN_DEPENDS 
+    std_msgs
 )
 
 ###########
@@ -37,14 +38,14 @@ endforeach()
 ## Testing ##
 #############
 
-if (CATKIN_ENABLE_TESTING)
-  find_package(roslaunch REQUIRED)
+# if (CATKIN_ENABLE_TESTING)
+#   find_package(roslaunch REQUIRED)
 
-  set(DIRECTORIES
-    ./launch/
-    )
+#   set(DIRECTORIES
+#     ./launch/
+#     )
 
-  foreach(dirs ${DIRECTORIES})
-    roslaunch_add_file_check(${dirs})
-  endforeach()
-endif()
+#   foreach(dirs ${DIRECTORIES})
+#     roslaunch_add_file_check(${dirs})
+#   endforeach()
+# endif()
